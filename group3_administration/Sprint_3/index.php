@@ -2,16 +2,8 @@
 <html>
 <head>
     <title>Test Page</title>
-    <link href="./css/bootstrap.css" rel="stylesheet">
+  <link href="./css/bootstrap.css" rel="stylesheet">
     <link href=".css/bootstrap-responsive.css" rel="stylesheet">
-    <style type="text/css">
-        body {
-            padding: 60px 0 40px;
-        }
-        .space {
-            margin-bottom: 20px;
-        }
-    </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,7 +18,7 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
 </head>
 <body>    
-	
+
 	<!-- Navbar
     ================================================== -->
     <div class="navbar navbar-inverse navbar-fixed-top"> <!-- This starts the navbar. Please don't erase anything inside of this div -->
@@ -59,15 +51,22 @@
         </div>
       </div>
     </div> <!-- This ends the navbar. Please don't erase anything inside of this div -->
+<center>
+    <h1>Job Administration</h1>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td><a href="view.php">View/Update Jobs</a></td>
+                <td><center>Search</center></td>
+        </tr>
+        <tr>
+            <td><a href="insertform.php">Add New</a></td>
+            <td><form name="search" action="search.php" method="post"><input type="text" name="query"></form></td>
+        </tr>
+        </tbody>
 
-	
-	<!-- YOUR CODE GOES HERE
-	================================================== -->
-        <div class="container">
-            <h1> Welcome to Researcher and collaboration!</h1><br> 
-            <p> <a href="searchPageForm.html" class="btn space">New Researcher</a> </p>
-            <p> <a href="existingResearcherSearch.html" class="btn">Existing Researcher</a> </p>
-        </div>
-        
-	</body>
+    </table>
+</center>
+
+</body>
 </html>
